@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeshika J.S's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3a8a, #000);
+            font-family: 'Arial', sans-serif;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .slide-in {
+            animation: slideIn 1.2s ease-out;
+        }
+        @keyframes popUp {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .pop-up {
+            animation: popUp 1.5s ease-out;
+        }
+        @keyframes bounceIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bounce-in {
+            animation: bounceIn 1.5s ease-out;
+        }
+        .hero-bg {
+            background: linear-gradient(145deg, #1e3a8a, #0f172a);
+        }
+        .hero-text {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .section-title {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+    <header class="hero-bg p-8 text-center fade-in">
+        <h1 class="text-6xl font-extrabold text-blue-400 hero-text">Jeshika J.S</h1>
+        <p class="text-xl mt-2">Electronics & Communication Engineer | Graphic Designer | Programmer | Web Developer</p>
+    </header>
+    <nav class="bg-gray-900 py-4 fade-in">
+        <div class="container mx-auto flex justify-center space-x-10">
+            <a href="#about" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition-all">About</a>
+            <a href="#projects" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition-all">Projects</a>
+            <a href="#contact" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition-all">Contact</a>
+        </div>
+    </nav>
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center slide-in">
+            <img src="https://via.placeholder.com/150" alt="Jeshika's Photo" class="mx-auto rounded-full border-4 border-blue-400 w-36 h-36">
+            <h2 class="text-5xl font-bold text-blue-400 mt-6 section-title">About Me</h2>
+            <p class="mt-4 text-lg">Hi there! I am Jeshika J.S, a creative and tech-driven Electronics and Communication Engineering student with a strong foundation in programming, graphic design, and web development. I am passionate about solving real-world problems using technology and creativity.</p>
+            <p class="mt-6 text-lg bounce-in">I specialize in building user-centric websites, crafting beautiful and functional graphic designs, and developing innovative embedded systems. I thrive on challenges and continuously push the boundaries of my knowledge to create meaningful solutions.</p>
+            <p class="mt-6 text-lg bounce-in">Whether it’s designing a logo, building a responsive website, or developing a complex microcontroller-based system, I approach every project with passion and dedication. I believe in constant learning and collaboration to bring new ideas to life.</p>
+        </div>
+    </section>
+    <section id="projects" class="py-16 bg-gray-800 bg-opacity-75">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-blue-400 fade-in section-title">My Projects</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg pop-up shadow-lg hover:scale-105 transition-transform">
+                    <h3 class="text-2xl font-semibold text-blue-400">Portfolio Website</h3>
+                    <p>A personal website showcasing my skills, projects, and professional journey with a modern and sleek design.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg pop-up shadow-lg hover:scale-105 transition-transform">
+                    <h3 class="text-2xl font-semibold text-blue-400">Graphic Design Portfolio</h3>
+                    <p>An extensive collection of creative designs tailored for various clients and personal ventures.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg pop-up shadow-lg hover:scale-105 transition-transform">
+                    <h3 class="text-2xl font-semibold text-blue-400">Embedded System Project</h3>
+                    <p>Developed a microcontroller-based system that integrates hardware and software seamlessly, demonstrating my expertise in embedded systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-5xl font-bold text-blue-400 section-title">Get in Touch</h2>
+            <p class="mt-6 text-lg">I am always eager to connect with like-minded professionals and explore collaborative opportunities. Feel free to reach out!</p>
+            <p class="mt-4 text-lg">Email: <a href="mailto:jeshikajeshika603@gmail.com" class="text-blue-400 hover:underline transition-all">jeshikajeshika603@gmail.com</a></p>
+            <p class="mt-2 text-lg">LinkedIn: <a href="https://linkedin.com/in/jeshika" target="_blank" class="text-blue-400 hover:underline transition-all">Jeshika's LinkedIn Profile</a></p>
+        </div>
+    </section>
+    <footer class="bg-black bg-opacity-75 py-6 fade-in">
+        <p class="text-center text-gray-400">&copy; 2024 Jeshika J.S. All rights reserved.</p>
+    </footer>
+</body>
+</html>
